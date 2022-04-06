@@ -1,4 +1,4 @@
-#Batmanacci
+# Batmanacci
 
 Solution to https://open.kattis.com/problems/batmanacci
 
