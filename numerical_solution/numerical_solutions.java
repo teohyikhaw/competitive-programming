@@ -1,6 +1,6 @@
 public class numerical_solutions {
     public static void main(String [] args){
-        newtons_method(1.0,-2,0,10);
+        eulers_method(1.0,-2,0,10);
         runge_katta(0.2,-2,0,10);
         improved_euler(0.0001,1,0,10000);
     }
@@ -19,7 +19,7 @@ public class numerical_solutions {
     public static double original_function(double t){
         return (Math.exp(t))/(Math.sqrt(-3/4+Math.exp(2*t)));
     }
-    public static void newtons_method(double delta_t1,double x_temp, double t_temp, int no_of_steps){
+    public static void eulers_method(double delta_t1,double x_temp, double t_temp, int no_of_steps){
         System.out.println("Step size: "+delta_t1);
         for(int i=1; i<=no_of_steps;i++){
             t_temp = t_k_plus_one(t_temp,delta_t1);
